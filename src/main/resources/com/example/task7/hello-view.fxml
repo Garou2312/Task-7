@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="box" alignment="CENTER" prefHeight="396.0" prefWidth="1038.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task7.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox alignment="CENTER" prefHeight="207.0" prefWidth="570.0" spacing="50.0">
+      <children>
+         <VBox fx:id="forTi" prefHeight="203.0" prefWidth="168.0">
+            <children>
+               <HBox prefHeight="32.0" prefWidth="157.0">
+                  <children>
+                     <Label prefHeight="23.0" prefWidth="78.0" text="Таймер на:" />
+                     <TextField fx:id="timeCount" prefHeight="26.0" prefWidth="41.0" />
+                  </children>
+               </HBox>
+               <HBox fx:id="forTimer" alignment="CENTER" prefHeight="100.0" prefWidth="157.0" />
+               <HBox alignment="CENTER" prefHeight="62.0" prefWidth="157.0" spacing="15.0">
+                  <children>
+                     <Button fx:id="startTimer" onAction="#startTimer" text="Старт" />
+                     <Button fx:id="stopTimer" onAction="#stopTimer" text="Пауза" />
+                  </children>
+               </HBox>
+            </children>
+         </VBox>
+         <VBox fx:id="down" alignment="CENTER" prefHeight="100.0" prefWidth="165.0">
+            <children>
+               <Label text="Процент загрузки" />
+               <HBox fx:id="forDownload" prefHeight="123.0" prefWidth="100.0" />
+               <HBox alignment="CENTER" prefHeight="100.0" prefWidth="189.0" spacing="15.0">
+                  <children>
+                     <Button fx:id="startDown" onAction="#startDown" text="Старт" />
+                     <Button fx:id="stopDown" onAction="#stopDown" text="Стоп" />
+                  </children>
+               </HBox>
+            </children>
+         </VBox>
+         <VBox alignment="CENTER" prefHeight="100.0" prefWidth="170.0" spacing="20.0">
+            <children>
+               <Label text="Прошло времени:" />
+               <HBox fx:id="forTime" alignment="CENTER" prefHeight="82.0" prefWidth="134.0" />
+               <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                  <children>
+                     <Button fx:id="startTime" onAction="#startTime" text="Старт" />
+                     <Button fx:id="stopTime" onAction="#stopTime" prefHeight="25.0" prefWidth="52.0" text="Стоп" />
+                  </children>
+               </HBox>
+            </children>
+         </VBox>
+      </children>
+   </HBox>
+</VBox>
